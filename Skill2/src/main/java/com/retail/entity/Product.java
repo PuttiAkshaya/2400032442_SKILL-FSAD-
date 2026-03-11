@@ -20,11 +20,9 @@ public class Product {
 
     private int quantity;
 
-    // Default Constructor
     public Product() {
     }
 
-    // Parameterized Constructor
     public Product(String name, String description, double price, int quantity) {
         this.name = name;
         this.description = description;
@@ -32,7 +30,6 @@ public class Product {
         this.quantity = quantity;
     }
 
-    // Getters and Setters
 
     public Long getId() {
         return id;
