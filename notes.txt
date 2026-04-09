@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+Local content
+=======
+GitHub content
+>>>>>>> origin/main
