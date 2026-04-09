@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- MySQL Driver -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+        <!-- Database URL -->
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/fsads3?useSSL=false&amp;serverTimezone=UTC
+        </property>
+
+        <!-- Username -->
+        <property name="hibernate.connection.username">root</property>
+
+        <!-- Password -->
+        <property name="hibernate.connection.password">Maha@999</property>
+
+        <!-- Dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- Pool Size -->
+        <property name="hibernate.connection.pool_size">10</property>
+
+        <!-- Schema Update -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Show SQL -->
+        <property name="hibernate.show_sql">true</property>
+
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Session Context -->
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <!-- Mapping -->
+        <mapping class="com.hibernate.entity.Product"/>
+
+    </session-factory>
+</hibernate-configuration>
